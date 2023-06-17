@@ -1,0 +1,864 @@
+/* Preentrega2: En este style.css estan separados cada css de su respectivo html con una anotacion.
+
+Aplique la tecnica Flexbox (si no se me rompia la pagina)
+Hice responsive mi sitio en todo html usando tecnicas y media queryls. 
+Use boostrap en el formulario de contacto, la pagina y el footer.
+
+Cree la pagina con tematica de universidad o cursos de cine, los textos los saque de la web de universidad de cine de la Enerc (http://www.enerc.gob.ar/carreras/)*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(205, 205, 205);
+    margin: 0;
+}
+
+h1{ 
+    font-size: 3em;}
+h2{ 
+    font-size: 2.7em;}
+h3{
+    font-size: 2em;}
+p{
+    font-size: 1.25em;}
+ul{
+    list-style: none;}
+li{ 
+    font-size: 1.25em;}
+
+button{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(255, 181, 45);
+    border: none;
+    transition: box-shadow 0.4s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 1px rgb(255, 181, 45), 0 0 2px rgb(255, 181, 45), 0 0 5px rgb(255, 181, 45), 0 0 10px rgb(255, 181, 45), 0 0 20px rgb(255, 181, 45);
+    }
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:rgb(255, 181, 45);
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.4);;
+}
+
+header{
+    background-color: white
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:rgb(255, 181, 45);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(30,30,30)
+}
+
+header a:hover{
+    color:rgb(255, 181, 45);
+}
+
+/* Parte CSS de (Index.html) */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/Tarantinoshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#hero a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(255, 181, 45);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: box-shadow 0.4s ease;
+    margin-top: 10px
+    }
+
+#hero a:hover {
+    box-shadow: 0 0 1px rgb(255, 181, 45), 0 0 2px rgb(255, 181, 45), 0 0 5px rgb(255, 181, 45), 0 0 10px rgb(255, 181, 45), 0 0 20px rgb(255, 181, 45);
+    }
+
+#somos-sciney .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+
+#somos-sciney h2{
+    margin-bottom: 5vh;
+}
+
+#nuestros-cursos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-cursos .container {
+    padding: 100px 0px;
+}
+
+#nuestros-cursos h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    font-size: 3em;
+}
+
+#nuestros-cursos p{
+    display: none;
+}
+
+#nuestros-cursos .carreras{
+    margin: 20px;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carreras:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/thebatman.jpg);
+}
+
+.carreras:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/guion2.jpg)
+}
+
+.carreras:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/nenekubrick.jpg);
+}
+
+.carreras:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/mrfox3.jpg);
+}
+
+.carreras:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/montaje.jpg);
+}
+
+.carreras:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/marlon2.jpg);
+}
+
+#nuestros-cursos a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(255, 181, 45);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: box-shadow 0.4s ease;
+    margin-top: 10px;
+}
+
+#nuestros-cursos a:hover{
+    box-shadow: 0 0 1px rgb(255, 181, 45), 0 0 2px rgb(255, 181, 45), 0 0 5px rgb(255, 181, 45), 0 0 10px rgb(255, 181, 45), 0 0 20px rgb(255, 181, 45);
+    }
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#caracteristicas li{
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(30,30,30);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#final h2{
+    margin-bottom: 0.5em;
+    color: white
+}
+
+#final button{
+    font-size: 1.75em;
+}
+
+#final a:hover {
+    box-shadow: 0 0 1px rgb(255, 181, 45), 0 0 2px rgb(255, 181, 45), 0 0 5px rgb(255, 181, 45), 0 0 10px rgb(255, 181, 45), 0 0 20px rgb(255, 181, 45);
+}
+
+#final a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(255, 181, 45);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: box-shadow 0.4s ease;
+}
+
+@media (min-width: 720px){ /* Header responsive */
+    
+    header{
+        position: sticky;
+        width: 100%;
+        top: 0
+    }
+    
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 2vh;
+    }
+
+    #somos-sciney .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-sciney .texto{
+        width: 50%;
+        max-width: 700px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-sciney h2{
+        margin-top: 0px;
+    }
+
+    #somos-sciney .img-container{
+        background-image: url(../media/scorcesesese.jpg);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+        width: 50vh;
+        background-repeat: no-repeat;
+    }
+
+    #caracteristicas .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #caracteristicas .texto{
+        width: 50%;
+        max-width: 700px;
+        text-align: left;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #caracteristicas h2{ 
+        margin-top: 0px;
+    }
+
+    #caracteristicas .img-container{
+        background-image: url(../media/cinemastudy2.jpg);
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+        width: 50vh;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Fin parte CSS de (Index.html) */
+
+/* ----------------------------- */
+
+/* Parte CSS de (Nosotros.html) */
+
+#hero2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 25vh;
+    color:white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/bladerunner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 h1{
+    color: white;
+    font-size: 1.95em;
+    padding: 1vh;
+}
+
+#hero2 button{
+    font-size: 1.05em;
+}
+
+#hero2 a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(255, 181, 45);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: box-shadow 0.4s ease;
+}
+
+#hero2 a:hover{
+    box-shadow: 0 0 1px rgb(255, 181, 45), 0 0 2px rgb(255, 181, 45), 0 0 5px rgb(255, 181, 45), 0 0 10px rgb(255, 181, 45), 0 0 20px rgb(255, 181, 45);
+    }
+
+#tuciney {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) ,url(../media/pxfuelCAMERA.jpg);
+}
+
+#tuciney p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#somos-sciney2 p{
+    color:rgb(30,30,30)
+}
+
+#somos-sciney2 .textoparrafo{
+    color: #000;
+    font-size: 1.2em
+}
+
+#somos-sciney2 .container{
+    text-align: center;
+    padding: 100px 12px;
+    padding-top: 80px;
+}
+
+#somos-sciney2 p{
+    font-size: 1.2em;
+    margin: 2.5vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+#nuestros-cursos2 {
+    color: white;
+    text-align: center;
+}
+
+#nuestros-cursos2 .container {
+    padding: 100px 0px;
+}
+
+#nuestros-cursos2 h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    font-size: 3em;
+    color: rgb(30,30,30)
+}
+
+#nuestros-cursos2 p{
+    display: none;
+}
+
+#nuestros-cursos2 .carreras{
+    margin: 20px;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+}
+
+#caracteristicas2 {
+    background-color:rgb(30,30,30)
+}
+
+#caracteristicas2 .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#caracteristicas2 li{
+    color: white
+}
+
+#caracteristicas2 li{
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+#final2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(30,30,30);
+    height: 40vh;
+}
+
+#final2 h2{
+    font-size: 5vh;
+    margin-bottom: 3vh;
+}
+
+#final2 button{
+    font-size: 3vh;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(30,30,30)
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Fin Parte CSS de (nosotros.html) */
+
+/* -------------------------------- */
+
+/* Parte CSS de (contacto.html) (Boostrap Aplicado) */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:20%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
+#formulario .form-area{
+    margin-bottom: 7%;
+}
+
+.form-area {
+padding-top: 7%;
+}
+
+.row.single-form {
+box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+
+.left {
+background:rgb(255, 181, 45);
+padding: 200px 98px;
+}
+
+.left h2 {
+font-family: Verdana;
+color: #fff;
+font-weight: 700;
+font-size: 48px;
+}
+
+.left h2 span {
+font-weight: 100;
+}
+
+.single-form{
+background: #fff;
+}
+
+.right {
+padding: 70px 100px;
+position: relative;
+}
+
+.right i {
+position: absolute;
+font-size: 80px;
+left: -27px;
+top: 40%;
+color: #fff;
+}
+
+.form-control {
+border: 2px solid #000;
+}
+
+.right button {
+border: none;
+border-radius: 0;
+background: #252525;
+width: 180px;
+color: #fff;
+padding: 15px 0;
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.right button:hover{
+background-color:rgb(255, 181, 45)
+}
+
+.footer2{
+    background-color: rgb(30,30,30)
+}
+
+.footer2 p{
+    margin: 0;
+    padding: 12px;
+    color: white
+}
+
+.footer2 .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*responsive de (contacto.html)*/
+
+@media (min-width:768px) and (max-width:991px){
+.right i {
+top: -52px;
+transform: rotate(90deg);
+left: 50%;}
+}
+
+@media (max-width:767px){
+.left {
+padding: 90px 15px;
+text-align: center;
+
+.left h2{
+font-size: 25px;
+}
+.right {
+padding: 25px;
+}
+
+.right i {
+top: -52px;
+transform: rotate(90deg);
+left: 46%;
+}
+
+.right button {
+width: 150px;
+padding: 12px 0;}
+}
+}
+
+/* Fin Parte CSS de (contacto.html) */
+
+/* -------------------------------- */
+
+/* Parte CSS de (cursos.html) (Boostrap Aplicado en pricing table) */
+
+.pricing-wrapper {
+	padding: 70px 0;
+}
+
+.head-text {
+	font-size: 40px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.pricing-box {
+	overflow: hidden;
+	border-right: 2px solid #efefff;
+	background: #ffffff;
+	margin-top: 70px;
+}
+
+.pricing-box.active {
+    transform: scale(1.1);
+    border: 3px solid #ff8a43;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+.pricing-box.active .pricing-first-content {
+	background: linear-gradient(90deg, #ff8a43  20%, #fa7070 100%) !important;
+}
+
+.pricing-box.active .pricing-first-content p {
+	color: #ffffff !important;
+}
+
+.pricing-first-box {
+	border-radius: 10px 0 0 10px;
+}
+
+.pricing-last-box {
+	border-radius: 0 10px 10px 0;
+	border-right: 0px solid transparent !important;
+}
+
+.pricing-first-content {
+	padding: 50px 30px;
+	background: rgb(255, 181, 45)
+}
+
+.pricing-first-content h3 {
+	text-transform: capitalize;
+	font-weight: 600;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.pricing-first-content p {
+	font-size: 14px;
+	line-height: 23px;
+	margin-top: 15px;
+	color: #cccccc;
+}
+
+.pricing-last-content {
+	padding: 35px 30px;
+}
+
+.pricing-last-content h2 {
+	font-weight: 600;
+	font-size: 42px;
+	color: #04000b;
+}
+
+.sub {
+    vertical-align: top;
+}
+
+.pricing-last-content h2 span {
+    font-size: 16px;
+}
+
+.price-color {
+	color: black !important;
+}
+
+.pricing-last-content ul {
+	margin-top: 15px;
+}
+
+.pricing-last-content ul li i {
+	margin-right: 10px;
+}
+
+.pricing-last-content ul li {
+    margin-bottom: 10px;
+}
+
+.pricing-box.active .custom-btn {
+	background: linear-gradient(90deg, #ff8a43  20%, #fa7070 100%) !important;
+	color: #ffffff !important;
+}
+
+.custom-btn {
+    border: 2px solid #dddddd;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 600;
+    border-radius: 30px;
+    color: rgb(255, 181, 45);
+    padding: 16px 45px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 15px;
+}
+
+.custom-btn:hover {
+	color: #ffffff;
+}
+
+.custom-btn:hover::after {
+	transform: translateY(-45%) skew(25deg) scale(1.2);
+}
+
+.custom-btn::after {
+	position: absolute;
+	top: inherit;
+	right: inherit;
+	bottom: inherit;
+	left: -5%;
+	content: "";
+	height: 150px;
+	width: 115%;
+	z-index: -1;
+	background: rgb(255, 181, 45);
+	transition: all 0.25s ease-in-out;
+	transform: translateY(-45%) skew(25deg) scale(0);
+}
+
+#preciosbs {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    justify-content: center;
+}
