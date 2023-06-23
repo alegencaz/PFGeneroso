@@ -1,0 +1,102 @@
+.pricing-wrapper {
+    padding: 70px 0;
+  }
+  
+  .head-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: #140404;
+  }
+  
+  .pricing-box {
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 70px;
+  
+    &.active {
+      transform: scale(1.1);
+      border: 3px solid #ff8a43;
+      border-radius: 10px;
+      z-index: 9;
+  
+      .pricing-first-content {
+        background: linear-gradient(90deg, #ff8a43 20%, #fa7070 100%) !important;
+  
+        p {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  
+  .pricing-first-box {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .pricing-first-content {
+    padding: 20px 30px;
+    background: $accent-color;
+  
+    h3 {
+      text-transform: capitalize;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+      line-height: 23px;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+  }
+  
+  .pricing-last-content {
+    padding: 35px 30px;
+  
+    h2 {
+      font-weight: 600;
+      font-size: 42px;
+      color: #04000b;
+    }
+  
+    .sub {
+      vertical-align: top;
+    }
+  
+    h2 span {
+      font-size: 16px;
+    }
+  
+    .price-color {
+      color: black !important;
+    }
+  
+    ul {
+      margin-top: 15px;
+  
+      li {
+        i {
+          margin-right: 10px;
+        }
+  
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  .pricing-box.active .custom-btn {
+    background: linear-gradient(90deg, #ff8a43 20%, #fa7070 100%) !important;
+    color: #ffffff !important;
+  }
+  
+  #preciosbs {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    color: rgb(30, 30, 30);
+  }
+  

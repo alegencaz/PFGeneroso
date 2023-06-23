@@ -1,0 +1,50 @@
+@import "_variables";
+@import "components/main";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $body-color;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.accent {
+    color: $accent-color;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,73 @@
+#nuestros-cursos {
+    background-color: rgb(30, 30, 30);
+    color: $white-color;
+    text-align: center;
+  }
+  
+  #nuestros-cursos .container {
+    padding: 100px 0px;
+  }
+  
+  #nuestros-cursos h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    font-size: 3em;
+  }
+  
+  #nuestros-cursos p {
+    display: none;
+  }
+  
+  #nuestros-cursos .carreras {
+    margin: 20px;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+  
+  .carreras:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/thebatman.jpg);
+  }
+  
+  .carreras:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/guion2.jpg);
+  }
+  
+  .carreras:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nenekubrick.jpg);
+  }
+  
+  .carreras:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/mrfox3.jpg);
+  }
+  
+  .carreras:nth-child(5) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/montaje.jpg);
+  }
+  
+  .carreras:nth-child(6) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/marlon2.jpg);
+  }
+  
+  #nuestros-cursos a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: $accent-color;
+    color: $white-color;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    transition: box-shadow 0.4s ease;
+    margin-top: 10px;
+  }
+  
+  #nuestros-cursos a:hover {
+    box-shadow: 0 0 1px $accent-color, 0 0 2px $accent-color, 0 0 5px $accent-color, 0 0 10px $accent-color, 0 0 20px $accent-color;
+  }
+  

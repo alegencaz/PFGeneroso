@@ -1,0 +1,143 @@
+$background-color: rgb(30, 30, 30);
+
+#hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 25vh;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../media/bladerunner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+        color: white;
+        font-size: 1.95em;
+        padding: 1vh;
+    }
+
+    button {
+        font-size: 1.05em;
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: $accent-color;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        font-size: 1.05em;
+        font-weight: bold;
+        transition: box-shadow 0.4s ease;
+
+        &:hover {
+            box-shadow: 0 0 1px $accent-color, 0 0 2px $accent-color,
+                0 0 5px $accent-color, 0 0 10px $accent-color,
+                0 0 20px $accent-color;
+        }
+    }
+}
+
+#tuciney {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../media/pxfuelCAMERA.jpg);
+
+    p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: white;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+#somos-sciney {
+    .container {
+        text-align: center;
+        padding: 100px 12px;
+        padding-top: 60px;
+
+        p {
+            font-size: 20px;
+            margin-top: 5vh;
+            padding: 1vh;
+            text-align: center;
+            color: rgb(30, 30, 30);
+        }
+    }
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: $background-color;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h2 {
+        margin-bottom: 0.5em;
+        color: white;
+    }
+
+    button {
+        font-size: 1.75em;
+    }
+
+    a {
+        display: inline-block;
+        padding: 5px 30px;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        background-color: $accent-color;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        transition: box-shadow 0.4s ease;
+
+        &:hover {
+            box-shadow: 0 0 1px $accent-color, 0 0 2px $accent-color, 0 0 5px $accent-color, 0 0 10px $accent-color, 0 0 20px $accent-color;
+        }
+    }
+}
+
+#caracteristicas {
+    .container {
+        text-align: center;
+        padding: 100px 0px;
+    }
+
+    li {
+        margin: 20px 0px;
+        font-weight: bold;
+        padding-right: 6vh;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
